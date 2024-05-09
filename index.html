@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gmail</title>
+    <!-- Css Link  -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <!-- bs icon -->
+    <!-- Bs Icon -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- notification library css -->
+    <!-- Notification Library Css -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -18,9 +19,9 @@
     />
   </head>
   <body>
-    <!-- header area -->
+    <!-- Header Area -->
     <header id="header">
-      <!-- left area -->
+      <!-- Left Area -->
       <div class="left">
         <div class="hamburger-menu">
           <i class="bi bi-list"></i>
@@ -28,7 +29,7 @@
         <img src="images/logo-24.png" alt="" />
         <span>Gmail</span>
       </div>
-      <!-- middle area -->
+      <!-- Middle Area -->
       <div class="middle">
         <form id="searchInputArea">
           <div class="search">
@@ -36,7 +37,7 @@
             <input
               type="search"
               id="search-input"
-              placeholder="Postalarda arayın"
+              placeholder="Search in mails"
             />
           </div>
           <div class="setting">
@@ -47,7 +48,7 @@
       <div id="toggle">
         <i class="indicator"></i>
       </div>
-      <!-- rigth area -->
+      <!-- Rigth Area -->
       <div class="right">
         <i class="bi bi-question-circle"></i>
         <i class="bi bi-gear"></i>
@@ -57,46 +58,46 @@
     </header>
     <!--  -->
     <section id="sectionArea">
-      <!--! left area  -->
+      <!--! Left area  -->
       <nav id="leftNav">
         <div class="create">
           <i class="bi bi-pencil-fill"></i>
-          <span>Oluştur</span>
+          <span>Create</span>
         </div>
         <div class="nav-middle">
           <a href="#" class="active">
             <i class="bi bi-inbox-fill"></i>
-            <span>Gelen Kutusu</span>
+            <span>Inbox</span>
           </a>
           <a href="#">
             <i class="bi bi-star"></i>
-            <span>Yıldızlananlar</span>
+            <span>Stared</span>
           </a>
           <a href="#">
             <i class="bi bi-clock"></i>
-            <span>Ertelenenler</span>
+            <span>Postponed</span>
           </a>
           <a href="#">
             <i class="bi bi-send-fill"></i>
-            <span>Gönderilmiş Postalar</span>
+            <span>Sent Mails</span>
           </a>
           <a href="#">
             <i class="bi bi-file-earmark"></i>
-            <span>Taslaklar</span>
+            <span>Drafts</span>
           </a>
           <a href="#">
             <i class="bi bi-caret-down-fill"></i>
-            <span>Diğer</span>
+            <span>Another</span>
           </a>
         </div>
         <div class="nav-bottom">
           <div>
-            <span>Etiketler</span>
+            <span>Tags</span>
             <i class="bi bi-plus-lg"></i>
           </div>
         </div>
       </nav>
-      <!--! main area -->
+      <!--! Main Area -->
       <main>
         <div class="top">
           <div class="left">
@@ -108,7 +109,7 @@
             <i class="bi bi-three-dots-vertical"></i>
           </div>
           <div class="right">
-            <p>3 satırdan 1-3 arası</p>
+            <p>1-3 of 3 lines</p>
             <i class="bi bi-caret-left passive"></i>
             <i class="bi bi-caret-right-fill"></i>
             <div class="keyboard">
@@ -168,13 +169,13 @@
       <div class="modal-inner">
         <i class="bi bi-x-lg" id="close-btn"></i>
         <form id="create-mail-form">
-          <label>Kime</label>
+          <label>To Who</label>
           <input type="text" />
-          <label>Konu</label>
+          <label>Subject</label>
           <input type="text" />
-          <label>İçerik</label>
+          <label>Contents</label>
           <textarea></textarea>
-          <button id="send-mail-btn">Gönder</button>
+          <button id="send-mail-btn">Send</button>
         </form>
       </div>
     </div>

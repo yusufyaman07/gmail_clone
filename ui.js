@@ -1,21 +1,16 @@
-// ekrana mail oluşturma penceresini oluşturmak için kullanılacak fonksiyon
 export function showModal(modal, willOpen) {
   modal.style.display = willOpen ? "grid" : "none";
 }
 
 function trimString(str, max) {
-  // metin maxdan kısaysa olduğu gibi gönderiyoruz
   if (str.length < max) return str;
-  // metnin harf uzunluğu max dan uzunsa
-  // maxa kadar olan kısmı kes ve sonrasında ... koy
-  // yeni metni return ile fonksiyonun çalıştığı yere gönder
+
   return str.slice(0, max) + "...";
 }
 
 export function renderMails(outlet, data) {
   if (!data) return;
-  // her bir mail objesi için bir maili temsil eden html oluştur
-  // oluşn mail htmlini mailler alanına gönderme(ekrana yazdırma)
+
   outlet.innerHTML = data
     .map(
       (mail) => `   
@@ -41,16 +36,14 @@ export function renderMails(outlet, data) {
 }
 
 export function renderCategories(outlet, data, selectCategory) {
-  // eski kategorileri sil
   outlet.innerHTML = "";
 
-  // bize gelen diziyi forEach ile dönüp özelliklerini ekleme
   data.forEach((category) => {
     const categoryItem = document.createElement("a");
-    // kategori elemanına veri ekleme
+
     categoryItem.dataset.name = category.title;
     console.log(categoryItem);
-    // Aktif olan kategoriye active classı
+
     categoryItem.className = selectCategory === category.title && "active";
 
     categoryItem.innerHTML = `
